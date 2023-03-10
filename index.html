@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="icon" href="./images/Logo.png" type="image/x-icon">
+    <title>DYV - Download youtube videos</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("lG24WVcaKwQrUdnH2");
+        })();
+    </script>
+    <script src="mail.js"></script>
+</head>
+<body>
+    <nav class="nav">
+    <a href="#">
+        <img src="./images/logo 2.png" class="logo" title="DYV" alt="DYV logo" draggable="false"></a>
+        <ul>
+        <li><a title="Home" href="#">Home</a></li>
+        <li><a title="About" href="#about-section">About</a></li>
+        <li><a title="Features" href="#feature-section">Features</a></li>
+        <li><a title="Contact US" href="#contact-section">contact us</a></li>
+        </ul>
+        <div id="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <header>
+     <div class="header-content">
+        <h1>Download youtube videos online</h1>
+
+        <form id="downloadForm" novalidate="true">
+
+        <input type="url" name="downloadLink" id="downloadInput" placeholder="Paste the youtube link of the video you will like to download here" required>
+
+        <button id="downloadButton" type="submit">Download<i class="fa-solid fa-download"></i></button>
+
+        </form>
+        </div>
+        
+        <section id="DownloadYoutubeSection">
+
+
+        <!-- <iframe style="width:230px;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url=https://www.youtube.com/watch?v=OUHVRWdVQCI&f=mp3&color=64c896"></iframe> -->
+
+            
+
+        </section>
+    </header>
+    <section class="about-section" id="about-section">
+        <div class="about-text">
+            <p>DYV also know as download youtube video is the fastest and safest Youtube Downloader tool that allows you to easily convert and download videos and audios from youtube for free and in the best available quality. DYV is the ultimate tool to download unlimited youtube videos without any need for registration. You can quickly convert and download hundreds of videos and music files directly from youtube. We support all audio and video formats like MP3, MP4, FLAC, WEBM_AUDIO, M4A, WAV, OGG, etc., and the most amazing thing, it's completely free and online. DYV does not store its user data making it 100% safe. For more information pls <a href="#contact-section">contact us</a></p>
+        </div>
+    </section>
+    <section class="features-section" id="feature-section">
+        <span class="material-symbols-outlined">
+            widgets
+        </span>
+        <div class="features">
+            <!-- Slider main container -->
+    
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+      <!-- Slides -->
+        <div class="swiper-slide"><img src="./images/344224-PAVMLX-531.jpg" alt="no advertisement"><h2>No advertisement</h2></div>
+        <div class="swiper-slide"><p>No need for registration</p></div>
+        <div class="swiper-slide"><img src="./images/traffic-sign.png" alt="free"><h2>Download for free</h2></div>
+        <div class="swiper-slide"><img src="./images/Data_security_28.jpg" alt="safe"><h2>100% safe</h2></div>
+        <div class="swiper-slide"><img src="./images/Sandy_Tech-23_Single-03.jpg" alt="Download youtube videos in High quality"><h2>Download youtube videos in High quality</h2></div>
+      ...
+        </div>
+    <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="pagination_">
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      </div>
+      </div>
+      <div class="credits-container">
+        <a href="credits.html" title="Click here to see images credits">Credits</a>
+      </div>
+    </div>
+    </section>
+    <section class="contact-section" id="contact-section">
+        <div class="form-container">
+            <form id="contact-form">
+            <div>
+                <h1>Contact Us</h1>
+                <div class="contact-underline">
+                <span class="line"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="line"></span>
+                </div>
+            </div>
+                <input class="inputs" type="text" id="fullName" placeholder="Enter your name" required>
+                <input class="inputs" type="email" name="email" id="email-id" placeholder="Enter your email ex: example@email.com" required>
+                <select id="reason" title="Select your reason for contact" name="reason" required>
+                    <option value="Select your reason for contact" selected disabled>Select your reason for contact</option>
+                    <option value="Failed">Failed to download video</option>
+                    <option value="suggestion">suggestions</option>
+                    <option value="virus">Virus detection</option>
+                    <option value="other">other</option>
+                </select>
+                <textarea class="inputs" name="" id="contactMessage" cols="30" rows="10" placeholder="Message" required></textarea>
+                <button type="submit" id="sendButton">Send</button>
+
+                <div id="submit-confirmation-container">
+
+                </div>
+
+
+                <script type="text/javascript">
+
+                    const contactForm = document.getElementById("contact-form");
+
+                    const fullName = document.getElementById("fullName");
+
+                    const emailId = document.getElementById("email-id");
+
+                    const reason = document.getElementById("reason");
+
+                    const contactMessage = document.getElementById("contactMessage");
+
+                    // const inputs = document.getElementsByClassName("inputs");
+                    
+                    const sendButton = document.getElementById("sendButton");
+
+                    const submitConfirmationContainer = document.getElementById("submit-confirmation-container");
+                    
+                    
+                    contactForm.onsubmit = function (e){
+
+                        e.preventDefault();
+
+                        sendMail();
+
+                        fullName.value = '';
+
+                        emailId.value = '';
+
+                        contactMessage.value = '';
+                        
+                        reason.value = 'Select your reason for contact';
+                    }
+
+                    function createConfirmationText() {
+                        
+                        const submitConfirmation = `
+                        <i class="fa-solid fa-xmark" onclick="document.getElementById('submit-confirmation-container').style.display = 'none'"></i>
+                        <div>
+                            <p>Your form has been submitted successfully &nbsp;</p><i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        `
+                        submitConfirmationContainer.style.display = "flex";
+                        submitConfirmationContainer.innerHTML = submitConfirmation;
+
+                    }
+
+                </script>
+                
+            </form>
+        </div>
+    </section>
+    <section class="tryNow">
+
+        <h2>Conviced? Try it Now</h2>
+        
+    <div>
+        <form id="downloadForm2" novalidate="true">
+            <input type="url" name="downloadLink" id="downloadInput2" placeholder="Paste the youtube link of the video you will like to download here" required><button id="downloadButton2" type="submit">Download<i class="fa-solid fa-download"></i></button>
+        </form>
+    </div>
+    <div id="DownloadYoutubeSection2">
+
+    </div>
+    </section>
+    <div id="mobile-menu">
+        
+       <div class="curve1">
+
+       </div>
+       <div class="curve2">
+
+       </div>
+       <nav class="mobile-nav">
+       <ul>
+       <li><a title="Home" href="#"><i class="fa-solid fa-house"></i></a></li>
+       <li><a title="About" href="#about-section"><i class="fa-solid fa-info"></i></a></li>
+       <li><a title="Features" href="#feature-section"><i class="fa-solid fa-gears"></i></a></li>
+       <li><a title="Contact" href="#contact-section"><i class="fa-solid fa-phone"></i></a></li>
+       </ul>
+       </nav>
+    </div>
+    <div id="toTop">
+        <a title="Back to top" href="#top"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#about-section">About Us</a></li>
+            <li><a href="privacyPolicy.html" target="_blank">Privacy policy</a></li>
+            <li><a href="termsAndConditions.html" target="_blank">Terms and conditions</a></li>
+ 
+        </ul>
+        <div class="social-media">
+
+            <div><a rel="noopener" title="github" href="https://github.com/ElijahCodes12345" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+            <div><a rel="noopener" title="twitter" href="https://twitter.com/ElijahAdebanwo" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+            <div><a rel="noopener" title="instagram" href="https://www.instagram.com/progangmer/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+            <div><a rel="noopener" title="whatsapp" href="https://wa.me/+22959043540" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+
+        </div>
+        <p style="color:rgb(122, 20, 20);font-size: 17px;">2023 &copy;copyright. All rights reserved</p>
+
+    </footer>
+
+    <div id="offline-note">
+
+        
+
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="swiper.js"></script> 
+</html>
+<!-- features includes:
+    NO ADS
+    Free of charge
+    High Quality
+    support for different video and audio formats
+    100% safe from viruses
+    No need for registration
+-->
+
+<!--<a href="https://www.flaticon.com/free-icons/traffic-sign" title="traffic sign icons">Traffic sign icons created by Vectors Market - Flaticon</a>-->

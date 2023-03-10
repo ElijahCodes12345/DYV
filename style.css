@@ -1,0 +1,860 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(231, 233, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+body ::selection{
+    background-color: #31c4c480;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: rgb(231, 229, 229);
+    font-family: Kanit;
+    z-index: 5;
+}
+#menu{
+    display: none !important;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:  center;
+}
+.line1{
+    height: 4px;
+    width: 60px;
+    background-color: #f00;
+}
+.line2{
+    height: 4px;
+    width: 40px;
+    background-color: #f00;
+    margin-top: 7px;
+}
+.line3{
+    height: 4px;
+    width: 60px;
+    background-color: #f00;
+    margin-top: 7px;
+}
+.logo{  
+   height: 100px;
+   transition: 0.5s;
+}
+.logo:hover{
+    filter: brightness(80%);
+}
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    place-items: center;
+    width: 70%;
+}
+.nav ul li{
+    list-style-type: none;
+    margin: 3%;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+.nav ul li a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    display: flex;
+    background-color: #f00;
+    transition: 0.5s;
+}
+.nav ul li a:hover::after{
+    width: 100%;
+}
+header{
+    background: url(/images/248225100-640x640.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+header .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1{
+    font-family: "Audiowide";
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+#downloadForm{
+    display: flex;
+    justify-content: center;
+}
+#downloadInput{
+    width: 50%;
+    padding: 1.3%;
+    outline: none;
+}
+#downloadButton{
+    background-color: #09c778;
+    padding: 1% 3%;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: kanit;
+    font-size: 18px;
+}
+#downloadButton:hover{
+    background-color: #079459;
+}
+.about-section{
+    padding: 7%;
+    display: flex;
+    justify-content: center;
+}
+.about-section .about-text{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 70%;
+    padding: 3%;
+}
+.about-section .about-text p{
+    font-size: 22px;
+    font-family: Kanit;
+}
+#downloadInput::placeholder{
+    font-family: Kanit;
+    font-size: 18px;
+}
+.features-section{
+    background: url(./images/4873152.jpg);
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 13%;
+    /* justify-content: center; */
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+    margin-top: 3%;
+}
+.features-section .material-symbols-outlined{
+    font-size: 75px;
+    margin-top: 2%;
+}
+.features-section .material-symbols-outlined::after{
+    content: '';
+    height: 3px;
+    width: 65%;
+    background-color: #f00;
+    display: flex;
+}
+
+/* swiper */
+
+.swiper{
+    width: 80%;
+    height: 450px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 5%;    
+    background-color: #fff;
+    box-shadow: inset 5px 5px 7px #d3d0d0;
+    cursor: grab;
+}
+.swiper-slide > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.swiper-slide h2{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: Kanit;
+    background: -webkit-linear-gradient(#f00, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.swiper-slide p{
+    font-size: 47px;
+    font-family: kanit;
+    font-weight: 800;
+    position: relative;
+    top: 40%;
+    background: -webkit-linear-gradient(#f00, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.swiper-button-prev,.swiper-button-next{
+    transition: 0.5s;
+}
+.swiper-button-prev:hover{
+    box-shadow: inset 3px 3px 4px #d6d5d5;
+    border-radius: 30px;
+    padding: 1%;
+}
+.swiper-button-next:hover{
+    box-shadow: inset 2px 2px 2px #d6d5d5;
+    border-radius: 30px;
+    padding: 1%;
+}
+
+.credits-container a{
+    font-size: 20px;
+    font-family: cursive;
+    color: #000;
+    transition: 0.4s;
+}
+.credits-container a:hover{
+    color: #444;
+}
+
+.contact-section{
+    background: url(./images/modern-geometrical-wallpaper-with-round-lines.jpg);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.form-container{
+    background-color: #eee;
+    width: 63%;
+    height: 100vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 0px 7px 4px #fff;
+}
+.form-container form h1{
+    font-size: 45px;
+    background: -webkit-linear-gradient(#000, #666);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-container form div .contact-underline{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.form-container form .contact-underline .line{
+    background-color: #000;
+    height: 2px;
+    width: 80px;
+}
+.form-container form .contact-underline .line:last-child{
+    background-color: #f00;
+}
+.form-container form .contact-underline .dot{
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #000;
+}
+.form-container form .contact-underline .dot:nth-child(3){
+    background: linear-gradient(80deg,#333,#f00);
+}
+.contact-section form{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+}
+.contact-section form input{
+    width: 80%;
+    padding: 2%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    margin-top: 5%;
+}
+.contact-section form input::placeholder{
+    font-size: 17px;
+    font-family: Kanit;
+}
+.contact-section form select{
+    width: 84.5%;
+    padding: 2%;
+    border-radius: 5px;
+    margin-top: 5%;
+    font-size: 17px;
+    font-family: Kanit;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-section form select:hover{
+    background-color: #eee;
+}
+.contact-section form #contactMessage{
+    resize: none;
+    width: 81.5%;
+    padding: 1.5%;
+    margin-top: 5%;
+    font-family: Kanit;
+    font-size: 17px;
+}
+.contact-section form #contactMessage::placeholder{
+    font-size: 20px;
+    font-family: Kanit;
+    position: absolute;
+    padding: 1%;
+    left: 15px;
+}
+.contact-section form button{
+    background-color: #02a762;
+    padding: 1%;
+    width: 40%;
+    font-size: 25px;
+    font-family: Kanit;
+    margin-top: 2%;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+.contact-section form button:hover{
+    background-color: #039257;
+}
+#mobile-menu{
+    position: fixed;
+    bottom: -500px;
+    height: 25vh;
+    width: 100%;
+    z-index: 30;
+    background: rgb(231, 229, 229);
+    background-size: cover;
+    transition: 1s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* box-shadow: inset 5px 5px 25px #eee; */
+    /* border-top-left-radius: 50%; */
+    /* border-top-right-radius: 50%; */
+}
+.curve1{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(231, 229, 229);
+    height: 30vh;
+    width: 30vh;
+    top: -50px;
+    left: -100px;
+    z-index: -10;
+    box-shadow: inset 2px 2px 2px #fff;
+}
+.curve2{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(232, 230, 230);
+    height: 30vh;
+    width: 30vh;
+    top: -50px;
+    right: -100px;
+    z-index: -10;
+    box-shadow: inset -4px 6px 0px #fff;
+    
+}
+#mobile-menu ul{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+#mobile-menu ul li{
+    list-style-type: none;
+}
+#mobile-menu i{
+    transition: 0.5s;
+}
+#mobile-menu i:hover{
+    color: #f00;
+}
+.mobile-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#toTop a{
+    text-decoration: none;
+    position: fixed;
+    background-color: #02a76296;
+    bottom: 4%;
+    right: 1%;
+    border-radius: 50%;
+    padding: 2%;
+    height: 25px;
+    width: 25px;
+    z-index: 25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#toTop a:hover{
+    background-color: #02834d;
+}
+#toTop i{
+    font-size: 45px;
+}
+#toTop a{
+    color: #000;
+}
+footer{
+    background-color: #f00;
+    border-top-left-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    font-family: Kanit;
+    padding: 2%;
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: 0.2s;
+}
+footer ul li a:hover{
+    color: #eee;
+}
+footer ul li a::after{
+    content: '';
+    display: flex;
+    width: 0;
+    height: 2px;
+    background-color: #111;
+    transition: 0.5s;
+}
+footer ul li a:hover::after{
+    width: 100%;
+}
+footer .social-media{
+    display: flex;
+    justify-content: center;
+}
+footer .social-media div i{
+    font-size: 27px;
+    margin: 10px;
+    cursor: pointer;
+}
+footer .social-media div .fa-github{
+    color: #171515;
+}
+footer .social-media div .fa-github:hover{
+    color: #0f0e0e;
+}
+footer .social-media div .fa-twitter{
+    color: #00acee;
+}
+footer .social-media div .fa-twitter:hover{
+    color: #0585b8;
+}
+footer .social-media div .fa-instagram{
+    background: -webkit-linear-gradient(#feda75,  #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* #feda75,  #fa7e1e, d62976, 962fbf, 4f5bd5 */
+}
+footer .social-media div .fa-instagram:hover{
+    background: -webkit-linear-gradient(#cfb15e,  #cc6618, #ac205f, #782699, #3b44a3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer .social-media div .fa-whatsapp{
+    color: #119485;
+}
+footer .social-media div .fa-whatsapp:hover{
+    color: #10776b;
+}
+footer .social-media div .fa-github,
+footer .social-media div .fa-twitter, 
+footer .social-media div .fa-instagram,
+footer .social-media div .fa-whatsapp{
+    transition: 0.3s;
+}
+.tryNow{
+    padding: 5%;
+}
+.tryNow h2{
+    font-size: 32px;
+    font-family: Kanit;
+}
+.tryNow div #downloadForm2{
+    display: flex;
+    justify-content: center;
+}
+#downloadInput2{
+    padding: 1.3%;
+    width: 50%;
+    outline: none;
+}
+#downloadInput2::placeholder{
+    font-family: Kanit;
+}
+#downloadButton2{
+    background-color: #09c778;
+    padding: 1% 3%;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: kanit;
+    font-size: 18px;
+}
+#downloadButton2:hover{
+    background-color: #039257;
+}
+#DownloadYoutubeSection{
+    display: flex;
+    justify-content: center;
+}
+#download-setting{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    color: #fff;
+    box-shadow: inset 7px 7px 7px #333;
+    border-radius: 30px;
+    padding: 5%;
+    height: 40%;
+    width: 30%;
+    top: 20%;
+    z-index: 50;
+}
+.cancel-setting{
+    width: 100%;
+    display: flex;
+    font-size: 32px;
+}
+.cancel-setting i{
+    cursor: pointer;
+    transition: 0.4s;
+}
+.cancel-setting i:hover{
+    color: #ccc;
+}
+#download-setting div{
+    font-family: Kanit;
+}
+/* .quality-setting{
+    margin-top: 10%;
+} */
+.formats-setting label{
+    color: #fff;
+    font-size: 25px;
+}
+/* .quality-setting label{
+    color: #fff;
+    font-size: 25px;
+} */
+select#formats{
+    width: 100%;
+    padding: 2%;
+    font-family: Kanit;
+    cursor: pointer;
+    transition: 0.5s;
+}
+select#formats:hover{
+    background-color: #d1cccc;
+}
+select#quality{
+    width: 100%;
+    padding: 2%;
+    font-family: Kanit;
+    cursor: pointer;
+    transition: 0.5s;
+}
+select#quality:hover{
+    background-color: #d1cccc;
+}
+.quality-setting .quality-container{
+    width: 100%;
+}
+#submitSettings{
+    background-color: #00c975;
+    color: #ddd;
+    font-size: 18px;
+    margin-top: 5%;
+    padding: 3% 10%;
+    font-family: Kanit;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+#submitSettings:hover{
+    background-color: #039256;
+}
+.iframe-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: #333;
+    padding: 5%;
+    margin-top: 5%;
+}
+.iframe-container i{
+    font-size: 42px;
+    color: #f00;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 1;
+}
+.iframe-container i:hover{
+    color: #a00;
+}
+.iframe-container iframe{
+    display: none;
+    pointer-events: none;
+}
+.iframe-container #loadingEle{
+    opacity: 1;
+}
+#offline-note{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #111;
+    z-index: 20;
+}
+#offline-note p{
+    font-family: Kanit;
+    font-size: 17px;
+    color: rgb(255, 0, 0);
+}
+#DownloadYoutubeSection2{
+    display: flex;
+    justify-content: center;
+}
+#submit-confirmation-container{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 84%;
+    background-color: #39ffadb2;
+    margin-top: 3%;
+    padding: 2%;
+}
+#submit-confirmation-container div{
+    display: flex;
+    align-items: center;
+}
+#submit-confirmation-container div i{
+    font-size: 18px;
+    color: #00ad65;
+}
+#submit-confirmation-container i{
+    color: #222;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#submit-confirmation-container i:hover{
+    color: #161616;
+}
+#submit-confirmation-container p{
+    font-family: Kanit;
+}
+
+@media screen and (max-width:700px) {
+    .logo{
+        height: 80px;
+    }
+    #menu{
+        display: flex !important;
+    }
+    .nav ul{
+        display: none;
+    }
+    #downloadForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+    #downloadInput{
+        width: 70%;
+        padding: 5%;
+        margin-left: 20%;
+    }
+    #downloadButton{
+        margin-top: 5%;
+        width: 80%;
+        margin-left: 20%;
+    }
+    .about-section{
+        padding: 3%;
+    }
+    .about-section .about-text{
+        background-color: #fff;
+        border-radius: 20px;
+        width: 100%;
+        padding: 3%;
+    }
+    .features-section{
+        height: 100vh;
+    }
+
+    .swiper{
+        width: 100%;
+    }
+    .swiper-slide h2:last-child{
+        top: 0%;
+    }
+
+    
+    .contact-section{
+        padding: 0;
+    }
+    .form-container{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .contact-section form{
+        width: 97%;
+    }
+    .contact-section form select{
+        width: 100%;
+        border-radius: 0;
+        padding: 4% 2%;
+    }
+    .contact-section form input{
+        width: 94.5%;
+        border-radius: 0;
+        padding: 4% 2%;
+    }
+    .contact-section form #contactMessage{
+        width: 97%;
+        border-radius: 0;
+    }
+    .active{
+        bottom: 0 !important;
+    }
+    #toTop a{
+        position: fixed;
+        background-color: #02a762;
+        bottom: 4%;
+        right: 5%;
+        border-radius: 50%;
+        padding: 2%;
+        height: 60px;
+        width: 60px;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #toTop i{
+        font-size: 60px;
+    }
+    #toTop a{
+        color: #000;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+    .tryNow{
+        padding: 15%;
+    }
+    #downloadForm2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        /* margin: 10px; */
+    }
+    .tryNow div{
+        display: flex;
+        justify-content: center;
+    }
+    #downloadInput2{
+        width: 90%;
+        padding: 5%;    
+    }
+    #downloadButton2{
+        margin-top: 5%;
+        width: 100%;
+        padding: 5%;
+    }
+    .iframe-container{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        background-color: #333;
+        padding: 10%;
+        margin-top: 5%;
+    }
+    #download-setting{
+        width: 70%;
+    }
+    #submit-confirmation-container{
+        flex-direction: column;
+        padding: 5%;
+    }
+    #submit-confirmation-container div{
+        justify-content: center;
+    }
+    #submit-confirmation-container div i{
+        display: none;
+    }
+    #submit-confirmation-container div p{
+        width: 70%;
+    }
+    /* #submit-confirmation-container div{
+        flex-direction: column; 
+        margin: 0;
+    } */
+}
